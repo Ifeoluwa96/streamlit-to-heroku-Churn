@@ -45,7 +45,7 @@ Exited—whether or not the customer left the bank.
 from google.colab import drive
 drive.mount('/content/drive')
 
-!pip install catboost
+#pip install catboost
 
 # Commented out IPython magic to ensure Python compatibility.
 #load necccessary libraries
@@ -490,11 +490,11 @@ pickle_out.close()
 #We have installed 3 libraries here. pyngrok is a python wrapper for ngrok which helps to open secure tunnels from public URLs to localhost. 
 #This will help us to host our web app. Streamlit will be used to make our web app.
 
-!pip install -q pyngrok
+#!pip install -q pyngrok
 
-!pip install -q streamlit
+#!pip install -q streamlit
 
-!pip install -q streamlit_ace
+#!pip install -q streamlit_ace
 
 data_cleaned.head()
 
@@ -595,11 +595,11 @@ data_cleaned.head()
 # if __name__=='__main__': 
 #     main()
 
-!streamlit run app.py &>/dev/null&
+#!streamlit run app.py &>/dev/null&
 
 from pyngrok import ngrok
  
 public_url = ngrok.connect('8501')
 public_url
 
-pip freeze > requirements.txt
+#pip freeze > requirements.txt
